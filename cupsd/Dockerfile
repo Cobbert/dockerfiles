@@ -1,5 +1,5 @@
 ARG MAINTAINER
-FROM debian:bullseye
+FROM debian:latest
 MAINTAINER $MAINTAINER
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
