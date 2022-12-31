@@ -1,5 +1,5 @@
 ARG MAINTAINER
-FROM debian:testing-slim
+FROM debian:bullseye
 MAINTAINER $MAINTAINER
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
