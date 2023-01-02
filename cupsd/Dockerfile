@@ -1,10 +1,10 @@
 ARG MAINTAINER
-FROM debian:latest
+FROM debian:11.6
 MAINTAINER $MAINTAINER
 
 # Install Packages (basic tools, cups, basic drivers, HP drivers)
-RUN apt-get update \
-&& apt-get install -y \
+RUN apt update \
+&& apt install -y \
   sudo \
   whois \
   usbutils \
@@ -12,15 +12,11 @@ RUN apt-get update \
   cups-client \
   cups-bsd \
   cups-filters \
-  foomatic-db-compressed-ppds \
   printer-driver-all \
   openprinting-ppds \
-  hpijs-ppds \
-  hp-ppd \
-  hplip \
   smbclient \
   printer-driver-cups-pdf \
-&& apt-get clean \
+&& apt clean \
 && rm -rf /var/lib/apt/lists/*
 
 # Add user and disable sudo password checking
