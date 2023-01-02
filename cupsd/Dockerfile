@@ -10,12 +10,6 @@ RUN apt update \
   usbutils \
   cups \
   cups-client \
-  cups-bsd \
-  cups-filters \
-  printer-driver-all \
-  openprinting-ppds \
-  smbclient \
-  printer-driver-cups-pdf \
 && apt clean \
 && rm -rf /var/lib/apt/lists/*
 
