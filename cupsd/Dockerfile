@@ -10,6 +10,17 @@ RUN apt update \
   usbutils \
   cups \
   cups-client \
+  printer-driver-brlaser \
+  cups-bsd \
+  cups-filters \
+  foomatic-db-compressed-ppds \
+  printer-driver-all \
+  openprinting-ppds \
+  hpijs-ppds \
+  hp-ppd \
+  hplip \
+  smbclient \
+  printer-driver-cups-pdf \
 && apt clean \
 && rm -rf /var/lib/apt/lists/*
 
